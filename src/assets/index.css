@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -9,5 +10,36 @@ ul {
 }
 
 #nav a.router-link-exact-active {
-    color: green;
+    color: black;
+    position: relative;
+    transition: all .3s ease;
+}
+
+#nav a.router-link-exact-active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: black;
+    transform: translate(-50%, 0%);
+    animation: link .2s;
+}
+
+a {
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+@keyframes link {
+    from {
+        transform: scale(.5);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }

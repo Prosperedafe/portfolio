@@ -1,0 +1,24 @@
+header {
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+.header__nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    background: linear-gradient(45deg, white, rgb(119, 117, 117));
+    padding: 1rem clamp(1rem, 6vw, 10rem);
+}
+
+.header__nav__ul {
+    display: flex;
+    gap: 3rem;
+}
+
+.header__nav__ul a {
+    color: black;
+    font-size: 1.2rem;
+}

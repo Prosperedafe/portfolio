@@ -1,38 +1,57 @@
 <template>
     <header>
-        <nav id="nav">
-            <ul>
+        <nav class="header__nav" id="nav">
+            <img :src="logo" alt="Logo">
+            <ul class="header__nav__ul">
                 <li>
                     <router-link :to="{name: 'Home' }" >Home</router-link>
                 </li>
                 <li>
                     <router-link :to="{name: 'About'}">About</router-link>
                 </li>
-                <li>Blog</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <!-- <li>Contact</li> -->
             </ul>
         </nav>
 
-        <button @click="redirect" >redirect</button>
+        <!-- <button @click="redirect" >redirect</button>
         <button @click="back" >Go back</button>
-        <button @click="foward">Go foward</button>
+        <button @click="foward">Go foward</button> -->
 
     </header>
 </template>
-
+<style>
+@import '../assets/style/header.css';
+</style>
 <script>
+
+import logo from "../assets/images/Group 7.svg"
+
 export default {
-    methods: {
-        redirect() {
-            this.$router.push({name: 'Home'})
-        },
-        back() {
-            this.$router.go(-1)
-        },
-        foward() {
-            this.$router.go(+1)
-        },
+    data: function () {
+        return {
+            logo: logo
+        }
     }
 }
+
 </script>
+
+<!-- <script>
+export default {
+    // methods: {
+    //     redirect() {
+    //         this.$router.push({name: 'Home'})
+    //     },
+    //     back() {
+    //         this.$router.go(-1)
+    //     },
+    //     foward() {
+    //         this.$router.go(+1)
+    //     },
+    // },
+     data: function () {
+        return {
+            image: image
+        },
+}
+</script> -->

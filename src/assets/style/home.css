@@ -1,0 +1,5 @@
+.intro-bg {
+    background: linear-gradient(45deg, hsl(0, 0%, 0%, .5), hsl(0, 0%, 0%, .8)), url("https://res.cloudinary.com/dmztxdgak/image/upload/v1683136608/tech-time/desktop_vfrfzf.jpg") no-repeat;
+    background-size: cover;
+    height: 300px;
+}

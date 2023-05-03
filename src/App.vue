@@ -1,17 +1,17 @@
 <template>
- <Heading/>
-<router-view/>
+  <Heading />
+  <router-view />
 </template>
 
 <script>
-import Heading from './components/Header.vue';
+import Heading from "./components/Header.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Heading
-  }
-}
+    Heading,
+  },
+};
 </script>
 
 <style>
