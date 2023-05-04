@@ -1,6 +1,6 @@
 .intro {
     color: #333333;
-    padding: 3rem clamp(1rem, 6vw, 10rem);
+    padding: 3rem clamp(1rem, 6vw, 10rem) 2rem clamp(1rem, 6vw, 10rem);
     display: flex;
     flex-wrap: wrap;
     row-gap: 2rem;
@@ -41,4 +41,46 @@
 
 .about__me {
     font-size: 1.2rem;
+}
+
+.what__i__do {
+    padding: 2rem clamp(1rem, 6vw, 10rem);
+}
+
+.what__i__do h2 {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.what__i__do .my__skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.what__i__do h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: .7rem;
+}
+
+.what__i__do p {
+    font-size: 1rem;
+}
+
+.what__i__do .my__skills>div {
+    background: #D6D6D6;
+    color: #333333;
+    transition: all .3s ease;
+    padding: 2rem 1rem;
+    flex-basis: 250px;
+}
+
+.what__i__do .my__skills>div:hover {
+    background: #333333;
+    color: #D6D6D6;
+    transform: scale(1.05);
 }

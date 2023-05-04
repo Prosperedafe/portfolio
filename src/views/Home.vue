@@ -2,6 +2,7 @@
   <main>
     <About />
     <WhatIDo />
+    <Social />
   </main>
 </template>
 <style>
@@ -10,11 +11,12 @@
 <script>
 import About from "@/components/About.vue";
 import WhatIDo from "@/components/WhatIDo.vue";
-
+import Social from "../components/Social.vue";
 export default {
   components: {
     About,
     WhatIDo,
+    Social,
   },
 };
 </script>

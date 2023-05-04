@@ -1,0 +1,37 @@
+.social {
+    background: #363434;
+    padding: 3rem clamp(1rem, 6vw, 10rem);
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.social h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.social h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 1.5rem;
+}
+
+.social .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.social::after {
+    content: 'Hello';
+    display: black;
+    position: absolute;
+    /* z-index: -1; */
+    font-size: clamp(3rem, 18vw, 15rem);
+    color: white;
+    top: 0;
+}

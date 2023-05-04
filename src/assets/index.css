@@ -38,6 +38,10 @@ img {
     max-width: 100%;
 }
 
+p {
+    line-height: 1.5rem;
+}
+
 @keyframes link {
     from {
         transform: scale(.5);
