@@ -1,6 +1,7 @@
 header {
     position: relative;
     padding-bottom: 5rem;
+    z-index: 1000;
 }
 
 .header__nav {
@@ -9,8 +10,12 @@ header {
     display: flex;
     align-items: center;
     gap: 4rem;
-    background: linear-gradient(45deg, white, rgb(119, 117, 117));
+    background: white;
     padding: 1rem clamp(1rem, 6vw, 10rem);
+}
+
+.header__logo {
+    height: 3rem;
 }
 
 .header__nav__ul {

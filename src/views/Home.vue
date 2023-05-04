@@ -1,18 +1,20 @@
 <template>
   <main>
-    <div class="intro-bg"></div>
-    <Hero />
+    <About />
+    <WhatIDo />
   </main>
 </template>
 <style>
 @import "../assets/style/home.css";
 </style>
 <script>
-import Hero from "../components/ProfileCard.vue";
+import About from "@/components/About.vue";
+import WhatIDo from "@/components/WhatIDo.vue";
 
 export default {
   components: {
-    Hero,
+    About,
+    WhatIDo,
   },
 };
 </script>

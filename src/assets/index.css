@@ -34,6 +34,10 @@ a {
     transition: all .3s ease;
 }
 
+img {
+    max-width: 100%;
+}
+
 @keyframes link {
     from {
         transform: scale(.5);

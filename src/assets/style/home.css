@@ -1,5 +1,44 @@
-.intro-bg {
-    background: linear-gradient(45deg, hsl(0, 0%, 0%, .5), hsl(0, 0%, 0%, .8)), url("https://res.cloudinary.com/dmztxdgak/image/upload/v1683136608/tech-time/desktop_vfrfzf.jpg") no-repeat;
-    background-size: cover;
-    height: 300px;
+.intro {
+    color: #333333;
+    padding: 3rem clamp(1rem, 6vw, 10rem);
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    column-gap: 4rem;
+}
+
+.intro>div {
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+.intro figure {
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+
+.intro figure img {
+    width: 100%;
+}
+
+.intro h1 {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    margin: 1rem 0;
+}
+
+.intro__hello {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 2rem;
+}
+
+.intro .line {
+    height: 2px;
+    width: 16px;
+    background: #333333;
+}
+
+.about__me {
+    font-size: 1.2rem;
 }
