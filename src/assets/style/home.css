@@ -84,3 +84,9 @@
     color: #D6D6D6;
     transform: scale(1.05);
 }
+
+@media (max-width: 450px) {
+    .what__i__do .my__skills>div {
+        flex-grow: 1;
+    }
+}

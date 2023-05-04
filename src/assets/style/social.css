@@ -1,6 +1,6 @@
 .social {
     background: #363434;
-    padding: 3rem clamp(1rem, 6vw, 10rem);
+    padding: 4rem clamp(1rem, 6vw, 10rem);
     text-align: center;
     color: white;
     position: relative;
@@ -26,12 +26,10 @@
     margin: auto;
 }
 
-.social::after {
-    content: 'Hello';
-    display: black;
+.social .hello {
+    width: 80%;
     position: absolute;
-    /* z-index: -1; */
-    font-size: clamp(3rem, 18vw, 15rem);
-    color: white;
-    top: 0;
+    left: 1rem;
+    top: 1rem;
+    /* z-index: ; */
 }
