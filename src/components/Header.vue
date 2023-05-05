@@ -1,14 +1,14 @@
 <template>
   <header>
     <nav class="header__nav" id="nav">
-      <img :src="logo" alt="Logo" class="header__logo" />
+      <div class="header__logo">prosper</div>
     </nav>
   </header>
 </template>
 <style>
 @import "../assets/style/header.css";
 </style>
-<script>
+<!-- <script>
 import logo from "../assets/images/logo.svg";
 
 export default {
@@ -18,5 +18,5 @@ export default {
     };
   },
 };
-</script>
+</script> -->
 

@@ -14,8 +14,11 @@ header {
     padding: 1rem clamp(1rem, 6vw, 10rem);
 }
 
+
 .header__logo {
-    height: 3rem;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 500;
 }
 
 .header__nav__ul {

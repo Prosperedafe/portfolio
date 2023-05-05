@@ -47,7 +47,7 @@
 
 .contact form {
     background-color: #333333;
-    padding: clamp(1rem, 3vw, 3rem);
+    padding: 2rem clamp(1rem, 3vw, 3rem);
     max-width: 400px;
     margin: auto;
 }
