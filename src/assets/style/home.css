@@ -41,7 +41,7 @@
 }
 
 .about__me {
-    font-size: 1.3rem;
+    font-size: 2rem;
     line-height: 1.8rem;
 }
 
@@ -73,12 +73,21 @@
     font-size: 1rem;
 }
 
+.what__i__do img {
+    height: 80px;
+}
+
 .what__i__do .my__skills>div {
     background: #D6D6D6;
     color: #333333;
     transition: all .3s ease;
     padding: 2rem 1rem;
     flex-basis: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .what__i__do .my__skills>div:hover {

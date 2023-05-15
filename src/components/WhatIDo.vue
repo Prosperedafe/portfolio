@@ -6,16 +6,29 @@
         <h3>
           {{ skill.title }}
         </h3>
-        <p>{{ skill.details }}</p>
+        <img :src="skill.icon" />
       </div>
     </div>
   </section>
 </template>
+
 <style>
 @import "../assets/style/home.css";
 </style>
 
 <script>
+import html from '../assets/images/icons8-html.svg'
+import css from '../assets/images/icons8-css.svg'
+import javascript from '../assets/images/icons8-javascript.svg'
+import typescript from '../assets/images/icons8-typescript.svg'
+import react from '../assets/images/icons8-react.svg'
+import vue from '../assets/images/icons8-vue-js.svg'
+import sass from '../assets/images/icons8-sass.svg'
+import tailwind from '../assets/images/icons8-tailwind-css.svg'
+import chakra from '../assets/images/icons8-chakra-ui.svg'
+import git from '../assets/images/icons8-git.svg'
+import github from '../assets/images/icons8-github (1).svg'
+
 export default {
   data() {
     return {
@@ -23,68 +36,57 @@ export default {
         {
           id: 1,
           title: "HTML",
-          details:
-            "User interface design, user experience design, user research.",
+          icon: html
         },
         {
           id: 2,
           title: "CSS",
-          details:
-            "User interface design, user experience design, user research.",
+          icon: css
         },
         {
           id: 3,
           title: "JAVASCRIPT",
-          details:
-            "User interface design, user experience design, user research.",
+          icon: javascript
         },
         {
           id: 4,
           title: "TYPESCRIPT",
-          details:
-            "User interface design, user experience design, user research.",
+          icon: typescript
         },
         {
           id: 5,
           title: "REACT.JS",
-          details:
-            "User interface design, user experience design, user research.",
+          icon: react
         },
         {
           id: 6,
           title: "VUE.JS",
-          details:
-            "User interface design, user experience design, user research.",
+          icon: vue
         },
         {
           id: 7,
           title: "SCSS",
-          details:
-            "User interface design, user experience design, user research.",
+          icon: sass
         },
         {
           id: 8,
           title: "TAILWIND CSS",
-          details:
-            "User interface design, user experience design, user research.",
+          icon: tailwind
         },
         {
           id: 9,
           title: "CHAKRA UI",
-          details:
-            "User interface design, user experience design, user research.",
+          icon: chakra
         },
         {
           id: 10,
           title: "GIT",
-          details:
-            "User interface design, user experience design, user research.",
+          icon: git
         },
         {
           id: 11,
           title: "GITHUB",
-          details:
-            "User interface design, user experience design, user research.",
+          icon: github
         },
       ],
     };

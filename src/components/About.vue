@@ -7,7 +7,7 @@
       </p>
       <h1>I’m Prosper Edafe</h1>
       <p class="about__me">
-        A Frontend Developer focused on building responsive web applications for best user experience.
+        Frontend Developer.
       </p>
     </div>
     <figure>

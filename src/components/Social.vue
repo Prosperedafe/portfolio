@@ -4,7 +4,7 @@
       <h2>Get In Touch</h2>
       <h3>Just Say Hello!</h3>
       <div class="links">
-        <a v-for="link in links" :key="link.id">
+        <a v-for="link in links" :key="link.id" :href="link.url" target="_blank">
           <img :src="link.img" />
         </a>
       </div>
@@ -21,8 +21,7 @@
 import facebook from "../assets/images/facebook 1.svg";
 import linkedin from "../assets/images/linkedin-logo 1.svg";
 import twitter from "../assets/images/twitter 1.svg";
-import behance from "../assets/images/behance 1.svg";
-import dribble from "../assets/images/dribbble 1.svg";
+import github from "../assets/images/icons8-github.svg";
 import Hello from '../assets/images/Hello.svg'
 
 export default {
@@ -31,29 +30,28 @@ export default {
       image: Hello,
       links: [
         {
-          id: 1,
-          label: "UI/UX",
-          img: facebook,
+          id: 3,
+          label: github,
+          img: github,
+          url: 'https://github.com/Prosperedafe'
         },
         {
           id: 2,
           label: "Web",
           img: linkedin,
+          url: 'https://www.linkedin.com/in/edafe-prosper-b046ba239/'
         },
         {
-          id: 3,
-          label: behance,
-          img: behance,
+          id: 1,
+          label: "UI/UX",
+          img: facebook,
+          url: 'https://www.facebook.com/prosper.edafe.10?mibextid=ZbWKwL'
         },
         {
           id: 4,
           label: twitter,
           img: twitter,
-        },
-        {
-          id: 5,
-          label: dribble,
-          img: dribble,
+          url: 'https://twitter.com/ProsperEdafe?t=mvwCBmrOm4ibBdmx67QpBA&s=09'
         },
       ],
     };
