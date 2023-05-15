@@ -6,7 +6,7 @@
         <h3>
           {{ skill.title }}
         </h3>
-        <img :src="skill.icon" />
+        <img :src="skill.icon" :alt="skill.title" />
       </div>
     </div>
   </section>

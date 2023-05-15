@@ -5,8 +5,8 @@
             <div>
                 <p>Let’s make somthing new, different and more meaningful or make thing more visual or conceptual? Just say
                     hello!</p>
-                <a href="#"><span></span>mamusedafe19@gmail.com</a>
-                <a href="#"><span></span>+2349093996415</a>
+                <a href="mailto:mamusedafe19@gmail.com" target="_blank"><span></span>mamusedafe19@gmail.com</a>
+                <a href="tel:08093996415"><span></span>+2349093996415</a>
             </div>
             <form>
                 <input type="text" name="" placeholder="Name" required>
