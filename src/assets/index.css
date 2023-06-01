@@ -52,6 +52,28 @@ p {
     line-height: 1.5rem;
 }
 
+:root {
+    --scroll-bar-color: #c5c5c5;
+    --scroll-bar-bg-color: #f6f6f6;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--scroll-bar-bg-color);
+}
+
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-bar-color);
+    border-radius: 20px;
+    border: 1px solid var(--scroll-bar-bg-color);
+}
+
 @keyframes link {
     from {
         transform: scale(.5);
