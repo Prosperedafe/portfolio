@@ -3,7 +3,7 @@
     <div>
       <p class="intro__hello">
         <span class="line"></span>
-        <span>Hello, I'm Prosper</span>
+        Hello, I'm Prosper
       </p>
       <h1>I design and develop web applications.
       </h1>
