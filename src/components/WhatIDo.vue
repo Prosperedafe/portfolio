@@ -17,7 +17,6 @@
 </style>
 
 <script>
-import html from '../assets/images/icons8-html.svg'
 import css from '../assets/images/icons8-css.svg'
 import javascript from '../assets/images/icons8-javascript.svg'
 import typescript from '../assets/images/icons8-typescript.svg'
@@ -27,17 +26,11 @@ import sass from '../assets/images/icons8-sass.svg'
 import tailwind from '../assets/images/icons8-tailwind-css.svg'
 import chakra from '../assets/images/icons8-chakra-ui.svg'
 import git from '../assets/images/icons8-git.svg'
-import github from '../assets/images/icons8-github (1).svg'
 
 export default {
   data() {
     return {
       skills: [
-        {
-          id: 1,
-          title: "HTML",
-          icon: html
-        },
         {
           id: 2,
           title: "CSS",
@@ -82,11 +75,6 @@ export default {
           id: 10,
           title: "GIT",
           icon: git
-        },
-        {
-          id: 11,
-          title: "GITHUB",
-          icon: github
         },
       ],
     };
