@@ -3,9 +3,6 @@
     <h2>Skills</h2>
     <div class="my__skills">
       <div v-for="skill in skills" :key="skill.id">
-        <h3>
-          {{ skill.title }}
-        </h3>
         <img :src="skill.icon" :alt="skill.title" />
       </div>
     </div>
@@ -17,11 +14,11 @@
 </style>
 
 <script>
-import css from '../assets/images/icons8-css.svg'
+import css from '../assets/images/icons8-csss.svg'
 import javascript from '../assets/images/icons8-javascript.svg'
 import typescript from '../assets/images/icons8-typescript.svg'
 import react from '../assets/images/icons8-react.svg'
-import vue from '../assets/images/icons8-vue-js.svg'
+import vue from '../assets/images/vue.png'
 import sass from '../assets/images/icons8-sass.svg'
 import tailwind from '../assets/images/icons8-tailwind-css.svg'
 import chakra from '../assets/images/icons8-chakra-ui.svg'
@@ -33,47 +30,38 @@ export default {
       skills: [
         {
           id: 2,
-          title: "CSS",
           icon: css
         },
         {
           id: 3,
-          title: "JAVASCRIPT",
           icon: javascript
         },
         {
           id: 4,
-          title: "TYPESCRIPT",
           icon: typescript
         },
         {
           id: 5,
-          title: "REACT.JS",
           icon: react
         },
         {
           id: 6,
-          title: "VUE.JS",
           icon: vue
         },
         {
           id: 7,
-          title: "SCSS",
           icon: sass
         },
         {
           id: 8,
-          title: "TAILWIND CSS",
           icon: tailwind
         },
         {
           id: 9,
-          title: "CHAKRA UI",
           icon: chakra
         },
         {
           id: 10,
-          title: "GIT",
           icon: git
         },
       ],

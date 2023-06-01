@@ -1,6 +1,6 @@
 .intro {
-    color: #333333;
-    padding: 3rem clamp(1rem, 6vw, 10rem) 2rem clamp(1rem, 6vw, 10rem);
+    color: #aba9a9;
+    padding: 5rem clamp(1rem, 6vw, 10rem) 2rem clamp(1rem, 6vw, 10rem);
     display: flex;
     flex-wrap: wrap;
     row-gap: 2rem;
@@ -22,9 +22,9 @@
 }
 
 .intro h1 {
-    font-size: clamp(2.5rem, 5vw, 5rem);
-    margin: 1rem 0;
-    font-weight: 600;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin: 3rem 0;
+    font-weight: 300;
 }
 
 .intro__hello {
@@ -36,13 +36,14 @@
 
 .intro .line {
     height: 2px;
-    width: 16px;
-    background: #333333;
+    width: 20px;
+    background: #ababab;
 }
 
 .about__me {
-    font-size: 2rem;
-    line-height: 1.8rem;
+    font-size: 1.5rem;
+    line-height: 1.635;
+    font-weight: 300;
 }
 
 .what__i__do {
@@ -50,8 +51,9 @@
 }
 
 .what__i__do h2 {
-    font-size: 2rem;
-    color: #333333;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #aba9a9;
     margin-bottom: 1.5rem;
     text-align: center;
 }
@@ -74,30 +76,10 @@
 }
 
 .what__i__do img {
-    height: 80px;
+    height: 50px;
 }
 
 .what__i__do .my__skills>div {
-    background: #D6D6D6;
     color: #333333;
     transition: all .3s ease;
-    padding: 2rem 1rem;
-    flex-basis: 250px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.what__i__do .my__skills>div:hover {
-    background: #333333;
-    color: #D6D6D6;
-    transform: scale(1.05);
-}
-
-@media (max-width: 450px) {
-    .what__i__do .my__skills>div {
-        flex-grow: 1;
-    }
 }

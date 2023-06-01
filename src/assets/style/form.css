@@ -1,91 +1,43 @@
 .contact {
     padding: 4rem clamp(1rem, 6vw, 10rem);
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
+    text-align: center;
 }
 
-.contact>div {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4rem;
-}
-
-.contact>div>div,
-.contact form {
-    flex-grow: 1;
-    flex-basis: 350px;
-}
 
 .contact h2 {
-    font-size: 2rem;
-    color: #333333;
+    font-size: 2.5rem;
+    color: #aba9a9;
     margin-bottom: 1.5rem;
     text-align: center;
+    font-weight: 300;
+    max-width: 500px;
+    margin: auto;
+    line-height: 1.5;
 }
 
 .contact p {
     font-size: 1.3rem;
     font-weight: 300;
-    margin: 2rem 0;
+    margin: 2rem 0 3rem 0;
+    color: #aba9a9;
+    line-height: 1.925;
 }
 
 .contact a {
-    color: #333333;
+    color: #aba9a9;
     display: flex;
     max-width: fit-content;
     align-items: center;
     gap: 10px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.8rem;
+    font-size: 1.3rem;
 }
 
 .contact a span {
     height: 2px;
     width: 20px;
-    background: #333333;
+    background: #aba9a9;
     opacity: .7;
-}
-
-.contact form {
-    background-color: #333333;
-    padding: 2rem clamp(1rem, 3vw, 3rem);
-    max-width: 400px;
-    margin: auto;
-}
-
-.contact input {
-    color: white;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid white;
-    margin-bottom: 1.7rem;
-    padding-bottom: .7rem;
-    font-size: 1rem;
-    width: 100%;
-}
-
-.contact textarea {
-    color: white;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid white;
-    margin-bottom: 1.7rem;
-    padding-bottom: .7rem;
-    font-size: 1rem;
-    width: 100%;
-    resize: none;
-}
-
-.contact button {
-    color: #333333;
-    font-weight: 600;
-    font-size: 1.2rem;
-    display: block;
-    margin-left: auto;
-    border: none;
-    padding: .8rem 2.5rem;
-}
-
-.contact input:focus,
-.contact textarea:focus {
-    outline: none;
 }

@@ -9,24 +9,46 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 4rem;
-    background: white;
+    background: hsl(0, 0%, 6%, .3);
     padding: 1rem clamp(1rem, 6vw, 10rem);
+    backdrop-filter: blur(5px);
 }
-
 
 .header__logo {
-    font-size: 40px;
-    font-style: italic;
+    font-size: 3.3rem;
     font-weight: 500;
+    color: #aba9a9;
+    position: relative;
+    padding-left: 1.3rem;
 }
 
-.header__nav__ul {
+.header__logo::after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    height: 2.5rem;
+    width: 30px;
+    background-color: rgb(59, 58, 58);
+    border-radius: 50%;
+    bottom: 3px;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+header .links {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
 }
 
-.header__nav__ul a {
-    color: black;
-    font-size: 1.2rem;
+header .links a {
+    color: #aba9a9;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+header .links a:hover {
+    color: #ffffff;
 }

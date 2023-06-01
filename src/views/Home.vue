@@ -1,9 +1,9 @@
 <template>
   <main>
     <About />
+    <Projects />
     <WhatIDo />
-    <Social />
-    <Contact/>
+    <Contact />
   </main>
 </template>
 <style>
@@ -12,14 +12,14 @@
 <script>
 import About from "@/components/About.vue";
 import WhatIDo from "@/components/WhatIDo.vue";
-import Social from "../components/Social.vue";
 import Contact from '../components/Form.vue';
+import Projects from '@/components/Projects.vue';
 export default {
   components: {
     About,
     WhatIDo,
-    Social,
     Contact,
+    Projects,
   },
 };
 </script>

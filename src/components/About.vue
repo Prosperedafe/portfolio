@@ -3,11 +3,12 @@
     <div>
       <p class="intro__hello">
         <span class="line"></span>
-        <span>Hello</span>
+        <span>Hello, I'm Prosper</span>
       </p>
-      <h1>I’m Prosper Edafe</h1>
+      <h1>I design and develop web applications.
+      </h1>
       <p class="about__me">
-        Frontend Developer.
+        I'm a full-time Frontend developer with a passion for great design and user experiences.
       </p>
     </div>
     <figure>
