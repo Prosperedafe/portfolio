@@ -11,7 +11,7 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 4rem;
-    background: hsl(0, 0%, 6%, .3);
+    background: hsl(0, 0%, 6%, .95);
     padding: 1rem clamp(1rem, 6vw, 10rem);
     backdrop-filter: blur(5px);
 }
@@ -51,4 +51,75 @@ header .links a {
 
 header .links a:hover {
     color: #ffffff;
+}
+
+header .hamburger {
+    display: none;
+    position: relative;
+    cursor: pointer;
+}
+
+header .hamburger span {
+    height: 2px;
+    width: 30px;
+    display: block;
+    background: #aba9a9;
+    margin: 6px 0;
+}
+
+@media(max-width: 700px) {
+    .header__nav {
+        padding: .3rem clamp(1rem, 6vw, 10rem);
+    }
+
+    header .links {
+        gap: 0;
+        flex-direction: column;
+        padding: 1rem;
+        position: absolute;
+        z-index: 10;
+        top: -30%;
+        left: 0;
+        right: 0;
+        min-height: 100vh;
+        max-height: 110vh;
+        background: hsl(0, 0%, 6%, .95);
+        transition: all .4s ease;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    header .links a {
+        max-width: fit-content;
+        margin: 0 auto 3rem auto;
+        display: block;
+    }
+
+    header .hamburger {
+        display: block;
+    }
+
+    header .active {
+        opacity: 1;
+        pointer-events: all;
+        top: 100%;
+    }
+
+    .hamburger .rl {
+        position: absolute;
+        transform: rotate(-45deg);
+        bottom: 0;
+        transition: all .4s ease;
+    }
+
+    .hamburger .rr {
+        position: absolute;
+        transform: rotate(45deg);
+        bottom: 0;
+        transition: all .4s ease;
+    }
+
+    .hamburger .r0 {
+        transform: scale(0);
+    }
 }
