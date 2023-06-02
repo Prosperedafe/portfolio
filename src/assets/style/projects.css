@@ -17,3 +17,17 @@
     line-height: 1.635;
     max-width: 900px;
 }
+
+.projects>div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.projects figure {
+    position: relative;
+}
+
+.projects figure img {
+    width: 100%;
+}
