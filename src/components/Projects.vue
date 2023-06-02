@@ -1,17 +1,3 @@
-<template>
-    <section class="projects">
-        <h2>Projects</h2>
-        <p>Check out a few of the main projects I have worked on, or some of my side projects on the left-hand side.
-        </p>
-        <div>
-            <figure v-for="link in links" :key="link.id">
-                <img :src="link.img" :alt="link.name">
-                <figcaption>{{ link.name }}</figcaption>
-                <a :href="link.url" target="_blank">{{ link.name }}</a>
-            </figure>
-        </div>
-    </section>
-</template>
 <style>
 @import '../assets/style/projects.css';
 </style>
@@ -25,67 +11,103 @@ import finebank from '../assets/projects/Screenshot_20230602_005321.jpg';
 import weather from '../assets/projects/Screenshot_20230602_005357.jpg';
 import blogr from '../assets/projects/Screenshot_20230602_005418.jpg';
 import meta from '../assets/projects/Screenshot_20230602_005539.jpg';
+import random from '../assets/projects/random.jpg';
 
 export default {
     data() {
         return {
             links: [
                 {
-                    id: 3,
+                    id: 1,
                     name: 'Techtime',
                     img: techtime,
-                    url: 'https://github.com/Prosperedafe'
+                    about: 'Tech World',
+                    url: 'https://tech-times.netlify.app/'
                 },
                 {
                     id: 2,
                     name: 'Art Museum',
                     img: museum,
-                    url: 'https://www.linkedin.com/in/edafe-prosper-b046ba239/'
+                    about: 'Art',
+                    url: 'https://art-museum-app.netlify.app/'
                 },
                 {
                     id: 3,
                     name: 'Smart Living',
+                    about: 'Your dream home',
                     img: living,
-                    url: 'https://www.facebook.com/prosper.edafe.10?mibextid=ZbWKwL'
+                    url: 'https://prosperedafe.github.io/real-estate/'
                 },
                 {
                     id: 4,
                     name: 'Formik',
+                    about: 'Form validation with formik',
                     img: formik,
-                    url: 'https://twitter.com/ProsperEdafe?t=mvwCBmrOm4ibBdmx67QpBA&s=09'
+                    url: 'https://formik-val.netlify.app/'
                 },
                 {
                     id: 5,
                     name: 'Movie Land',
+                    about: 'Movei app',
                     img: movhub,
-                    url: 'https://twitter.com/ProsperEdafe?t=mvwCBmrOm4ibBdmx67QpBA&s=09'
+                    url: 'https://mov-hub.netlify.app/'
                 },
                 {
                     id: 6,
                     name: 'Finebank',
+                    about: 'Finebank dashboard',
                     img: finebank,
-                    url: 'https://twitter.com/ProsperEdafe?t=mvwCBmrOm4ibBdmx67QpBA&s=09'
+                    url: 'https://finebankio.netlify.app/'
                 },
                 {
                     id: 7,
                     name: 'Weather',
+                    about: 'Weather App',
                     img: weather,
-                    url: 'https://twitter.com/ProsperEdafe?t=mvwCBmrOm4ibBdmx67QpBA&s=09'
+                    url: 'https://p-weather.netlify.app/'
                 },
                 {
                     id: 8,
                     name: 'Blogr',
+                    about: 'Blogr Landing Page',
                     img: blogr,
-                    url: 'https://twitter.com/ProsperEdafe?t=mvwCBmrOm4ibBdmx67QpBA&s=09'
+                    url: 'https://prosperedafe.github.io/Blogr-landing-page/'
                 },
                 {
                     id: 9,
                     name: 'Ar Metaverse',
+                    about: 'Explore The world of Metaverse',
                     img: meta,
-                    url: 'https://twitter.com/ProsperEdafe?t=mvwCBmrOm4ibBdmx67QpBA&s=09'
+                    url: 'https://prosperedafe.github.io/Ar-metaverse/'
+                },
+                {
+                    id: 10,
+                    name: 'Random Tour',
+                    about: 'Random People Generator',
+                    img: random,
+                    url: 'https://prosperedafe.github.io/Random-meetup-app/'
                 },
             ],
         };
     },
 };
 </script>
+
+<template>
+    <section class="projects">
+        <h2>Projects</h2>
+        <p>Check out a few of the main projects I have worked on, or some of my side projects.
+        </p>
+        <div class="project">
+            <div>
+                <a v-for="link in links" :key="link.id" :href="link.url" target="_blank">
+                    <div class="overlay"></div>
+                    <figure>
+                        <img :src="link.img" :alt="link.name">
+                        <figcaption>{{ link.name }} <br> {{ link.about }}</figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </section>
+</template>

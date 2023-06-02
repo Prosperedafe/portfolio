@@ -18,16 +18,71 @@
     max-width: 900px;
 }
 
-.projects>div {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.projects .project {
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-top: 4rem;
 }
 
-.projects figure {
-    position: relative;
+.projects .project::-webkit-scrollbar {
+    display: none;
+}
+
+.projects .project>div {
+    display: flex;
+    align-items: center;
+}
+
+.projects * {
+    transition: all .3s ease;
 }
 
 .projects figure img {
     width: 100%;
+}
+
+.project figcaption {
+    position: absolute;
+    z-index: 3;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 100%;
+    font-weight: 600;
+}
+
+.projects .project a {
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #cfc6c6;
+    flex-shrink: 0;
+    width: 200px;
+    display: block;
+    margin-right: 1rem;
+    overflow: hidden;
+    height: 290px;
+    border-radius: 10px;
+}
+
+.projects a .overlay {
+    inset: 0;
+    background-color: hsl(0, 0%, 0%, .3);
+    position: absolute;
+    z-index: 1;
+}
+
+.projects a:hover .overlay {
+    backdrop-filter: blur(10px);
+}
+
+.projects a:hover img {
+    transform: scale(1.05);
+}
+
+.projects a:hover figcaption {
+    opacity: 1;
+    top: 50%;
 }
