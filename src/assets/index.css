@@ -12,7 +12,14 @@ html {
 }
 
 body {
-    background: hsl(0, 0%, 6%);
+    background: linear-gradient(to bottom, hsla(0, 0%, 2%, 0.8), hsl(0, 0%, 2%)), url('./images/wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    backdrop-filter: blur(4px);
 }
 
 ul {
@@ -72,14 +79,4 @@ p {
     background-color: var(--scroll-bar-color);
     border-radius: 20px;
     border: 1px solid var(--scroll-bar-bg-color);
-}
-
-@keyframes link {
-    from {
-        transform: scale(.5);
-    }
-
-    to {
-        transform: scale(1);
-    }
 }

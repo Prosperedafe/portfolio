@@ -1,15 +1,28 @@
 .intro {
-    color: #aba9a9;
+    color: hsl(0, 1%, 80%);
     padding: 5rem clamp(1rem, 6vw, 10rem) 2rem clamp(1rem, 6vw, 10rem);
     display: flex;
     flex-wrap: wrap;
     row-gap: 2rem;
     column-gap: 4rem;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .intro>div {
     flex-basis: 400px;
     flex-grow: 1;
+}
+
+@media(max-width: 700px) {
+
+    .intro {
+        padding-top: 3rem;
+    }
+
+    .intro>div {
+        text-align: center;
+    }
 }
 
 .intro figure {
@@ -22,7 +35,7 @@
 }
 
 .intro h1 {
-    font-size: clamp(2.5rem, 5.5vw, 4rem);
+    font-size: clamp(2.5rem, 5vw, 5rem);
     margin: 3rem 0;
     font-weight: 300;
 }
@@ -33,10 +46,10 @@
     gap: .5rem;
     line-height: 1.8;
     font-size: clamp(2rem, 4vw, 3rem);
-    -webkit-text-stroke: 1px #ababab;
+    -webkit-text-stroke: 1px hsl(0, 0%, 80%);
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #ababab;
+    -webkit-text-stroke-color: hsl(0, 0%, 80%);
 }
 
 .intro .line {
@@ -58,7 +71,7 @@
 .what__i__do h2 {
     font-size: 2.5rem;
     font-weight: 300;
-    color: #aba9a9;
+    color: hsl(0, 1%, 80%);
     margin-bottom: 1.5rem;
     text-align: center;
 }

@@ -11,10 +11,10 @@
         I'm a full-time Frontend developer with a passion for great design and user experiences.
       </p>
     </div>
-    <figure>
+    <!-- <figure>
       <img src="https://res.cloudinary.com/dmztxdgak/image/upload/v1683312801/tech-time/IMG-20220810-WA0017_sick8x.jpg"
         alt="profile" />
-    </figure>
+    </figure> -->
   </section>
 </template>
 
