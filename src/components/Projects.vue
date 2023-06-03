@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
 @import '../assets/style/projects.css';
 </style>
 <script>
@@ -110,4 +110,4 @@ export default {
             </div>
         </div>
     </section>
-</template>
+</template> -->

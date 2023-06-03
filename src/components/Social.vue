@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <section class="social">
     <div class="social__bg">
       <h2>Get In Touch</h2>
@@ -8,7 +8,7 @@
           <img :src="link.img" />
         </a>
       </div>
-      <!-- <img :src="image" alt="hello" class="hello"> -->
+      <img :src="image" alt="hello" class="hello">
     </div>
   </section>
 </template>
@@ -58,4 +58,4 @@ export default {
   },
 };
 
-</script>
+</script> -->

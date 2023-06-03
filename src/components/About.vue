@@ -17,19 +17,6 @@
     </figure> -->
   </section>
 </template>
-
 <style>
 @import "../assets/style/home.css";
 </style>
-
-<script>
-import profile from "../assets/images/Image Container.png";
-
-export default {
-  data: function () {
-    return {
-      profile: profile,
-    };
-  },
-};
-</script>
