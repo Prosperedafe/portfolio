@@ -1,6 +1,6 @@
 .contact {
     padding: 4rem clamp(1rem, 6vw, 10rem);
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     text-align: center;
 }
