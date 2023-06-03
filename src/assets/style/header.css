@@ -1,6 +1,6 @@
 header {
     position: relative;
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
     z-index: 1000;
 }
 
@@ -11,7 +11,6 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 4rem;
-    /* background: hsl(0, 0%, 6%, .95); */
     padding: 1rem clamp(1rem, 6vw, 10rem);
     backdrop-filter: blur(4px);
 }
@@ -21,6 +20,7 @@ header {
     font-weight: 500;
     color: hsl(0, 1%, 80%);
     position: relative;
+    z-index: 1;
     padding-left: 1.3rem;
 }
 
@@ -75,9 +75,9 @@ header .hamburger span {
     header .links {
         gap: 0;
         flex-direction: column;
-        padding: 1rem;
+        padding: 8rem 0 1rem 0;
         position: absolute;
-        z-index: 10;
+        z-index: -1;
         top: -30%;
         left: 0;
         right: 0;
@@ -102,7 +102,7 @@ header .hamburger span {
     header .active {
         opacity: 1;
         pointer-events: all;
-        top: 100%;
+        top: 0%;
     }
 
     .hamburger .rl {
