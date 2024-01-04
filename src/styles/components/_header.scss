@@ -1,0 +1,89 @@
+header {
+    background-color: #222;
+    position: relative;
+
+    nav {
+        padding: 3px $fluid;
+        @include flex-justify(space-between);
+        @include align-items(center);
+
+        .nav-toggler {
+            display: none;
+            gap: 4px;
+            cursor: pointer;
+
+            span {
+                display: block;
+                height: 3px;
+                width: 25px;
+                background: #f7efef;
+                border-radius: 3px;
+            }
+        }
+
+        ul {
+            @include flex-justify(space-between);
+            @include align-items(center);
+            gap: $big;
+            background-color: #222;
+
+            li {
+                a {
+                    font-size: $sm;
+                    color: #f7efef;
+                    font-family: $quicksand;
+                    font-weight: (map-get($font-weights, "semi-bold"));
+                }
+            }
+        }
+    }
+
+    @media (max-width: 550px) {
+        position: fixed;
+        top: 0;
+        width: 100%;
+
+        nav {
+            padding: 0 $fluid;
+
+            .nav-toggler {
+                display: grid;
+            }
+
+            .logo {
+                svg {
+                    height: 70px;
+                    width: 70px;
+                }
+            }
+
+            ul {
+                position: absolute;
+                flex-direction: column;
+                top: 100%;
+                left: 0;
+                height: fit-content;
+                overflow-y: scroll;
+                justify-content: flex-start;
+                width: 100%;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+                align-items: flex-start;
+                padding: $large $fluid;
+                gap: $big;
+                opacity: 0;
+                pointer-events: none;
+                transition: all .3s ease-in-out;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+
+            .open {
+                pointer-events: all;
+                opacity: 1;
+            }
+        }
+    }
+}

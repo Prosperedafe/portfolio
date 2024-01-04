@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Quicksand:wght@300;400;500;600&display=swap');
+@import "./styles/components/variables";
+@import "./styles/components/mixins";
+@import "./styles/components/header";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    body {
+        background-color: #161513;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
