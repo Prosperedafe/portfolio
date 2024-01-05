@@ -1,0 +1,61 @@
+footer {
+    padding: 4rem $fluid;
+    background-color: #0C0B0F;
+
+    .social {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 550px;
+        justify-content: center;
+        margin: 0 auto;
+        gap: $base;
+
+        a {
+            padding: .7rem $base;
+            text-decoration: none;
+            font-family: $quicksand;
+            border-radius: 30px;
+            font-weight: map-get($font-weights, "bold");
+            max-width: 130px;
+            flex-basis: 100px;
+            flex-grow: 1;
+            text-align: center;
+            font-size: $sm;
+
+            &:hover {
+                opacity: .9;
+            }
+        }
+
+
+        .whatsapp {
+            background-color: #24b637;
+            color: #f7efef;
+        }
+
+        .instagram {
+            background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45);
+            color: #f7efef;
+        }
+
+        .gmail {
+            background: #F07A31;
+            color: #f7efef;
+        }
+
+        .facebook {
+            background: #105C9E;
+            color: #f7efef;
+        }
+
+        .github {
+            background: #121a24;
+            color: #f7efef;
+        }
+
+        .twitter {
+            background: #1D9BF0;
+            color: #f7efef;
+        }
+    }
+}
