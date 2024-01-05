@@ -2,7 +2,7 @@
     <header>
         <nav class="container">
             <router-link to="/" class="logo">
-                <Logo />
+                <img src="../assets/logo.svg" alt="logo">
             </router-link>
             <div class="nav-toggler" @click="toggleNav">
                 <span></span>

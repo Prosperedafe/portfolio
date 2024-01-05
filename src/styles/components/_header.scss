@@ -7,6 +7,14 @@ header {
         @include flex-justify(space-between);
         @include align-items(center);
 
+        .logo {
+            padding-top: 4px;
+
+            img {
+                height: 60px;
+            }
+        }
+
         .nav-toggler {
             display: none;
             gap: 4px;
@@ -51,9 +59,9 @@ header {
             }
 
             .logo {
-                svg {
-                    height: 70px;
-                    width: 70px;
+                img {
+                    object-fit: cover;
+                    image-rendering: pixelated;
                 }
             }
 
