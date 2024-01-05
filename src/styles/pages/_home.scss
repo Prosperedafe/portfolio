@@ -1,0 +1,127 @@
+.home {
+    padding-top: 4rem;
+
+    &__intro__section {
+        text-align: center;
+        padding: $base $fluid;
+        color: #f7efef;
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, calc($big * 2));
+            font-family: $alice;
+            margin: $md auto;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 0 auto;
+            font-family: $quicksand;
+            line-height: 1.8;
+            font-size: $base;
+        }
+
+        .actions {
+            @include flex-justify(center);
+            gap: 10px;
+            margin: $big 0;
+
+            a {
+                font-size: $base;
+                font-family: $quicksand;
+                font-weight: map-get($font-weights, "bold");
+                border-radius: 30px;
+                padding: .6rem $base;
+                transition: all .3s ease-in-out;
+                text-decoration: none;
+            }
+
+            .contact {
+                background-color: #f7efef;
+                border: 2px solid #f7efef;
+                color: #161513;
+
+                &:hover {
+                    background-color: #161513;
+                    color: #f7efef;
+                }
+            }
+
+            .cv {
+                background-color: #161513;
+                border: 2px solid #f7efef;
+                color: #f7efef;
+
+                &:hover {
+                    background-color: #f7efef;
+                    color: #161513;
+                }
+            }
+        }
+    }
+
+    .skills {
+        padding: $base $fluid;
+        text-align: center;
+        color: #f7efef;
+
+        h2 {
+            font-family: $alice;
+            font-size: clamp($big, 4vw, calc($base * 3));
+            font-weight: map-get($font-weights, "semi-bold");
+        }
+
+        .languages {
+            @include flex-justify(center);
+            align-items: center;
+            gap: $base;
+            margin: $big 0 0 0;
+        }
+    }
+
+    .experience {
+        padding: $large $fluid;
+
+        h2 {
+            color: #f7efef;
+            text-align: center;
+            font-family: $alice;
+            margin-bottom: $md;
+            font-size: clamp($big, 4vw, calc($base * 3));
+            font-weight: map-get($font-weights, "semi-bold");
+        }
+
+        &s {
+            header {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img {
+                    height: 35px;
+                }
+
+                .role {
+                    font-size: 1.2rem;
+                    color: #f7efef;
+                    font-family: $quicksand;
+                    font-weight: map-get($font-weights, "bold");
+                }
+
+                .duration {
+                    margin-left: auto;
+                    color: #a2a4a5;
+                    font-family: $quicksand;
+                    font-weight: map-get($font-weights, "bold");
+                }
+            }
+
+            .description {
+                margin-top: $xm;
+                color: #a2a4a5;
+                line-height: 1.6;
+                font-family: $quicksand;
+                font-weight: map-get($font-weights, "medium");
+            }
+        }
+    }
+}

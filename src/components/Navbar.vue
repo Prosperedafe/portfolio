@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header class="main-header">
         <nav class="container">
             <router-link to="/" class="logo">
                 <img src="../assets/logo.svg" alt="logo">
@@ -11,7 +11,6 @@
             </div>
             <ul :class="{ open: isActive }">
                 <li><router-link to="/">HOME</router-link></li>
-                <li><router-link to="/about">ABOUT ME</router-link></li>
                 <li><router-link to="/contact">CONTACT</router-link></li>
                 <li><a href="#">Résumé</a></li>
             </ul>
@@ -21,7 +20,6 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Logo from './Logo.vue';
 
 export default defineComponent({
     data() {
@@ -35,7 +33,6 @@ export default defineComponent({
         },
     },
     components: {
-        Logo,
     }
 });
 </script>

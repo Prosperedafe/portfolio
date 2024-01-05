@@ -1,8 +1,11 @@
-header {
+.main-header {
     background-color: #222;
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
     nav {
+        position: relative;
         padding: 3px $fluid;
         @include flex-justify(space-between);
         @include align-items(center);
@@ -47,10 +50,6 @@ header {
     }
 
     @media (max-width: 550px) {
-        position: fixed;
-        top: 0;
-        width: 100%;
-
         nav {
             padding: 0 $fluid;
 
