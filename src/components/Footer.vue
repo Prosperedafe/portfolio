@@ -23,11 +23,9 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Vue3Marquee from 'vue3-marquee';
 
 export default defineComponent({
     components: {
-        Vue3Marquee
     },
 });
 </script>

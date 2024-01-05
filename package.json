@@ -11,9 +11,7 @@
   "dependencies": {
     "scss": "^0.2.4",
     "vue": "^3.3.11",
-    "vue-marquee-slider": "^1.0.6",
-    "vue-router": "^4.2.5",
-    "vue3-marquee": "^4.1.0"
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@types/node": "^20.10.6",
