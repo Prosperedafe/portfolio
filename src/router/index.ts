@@ -10,8 +10,8 @@ const routes: RouteRecordRaw[] = [
         component: Home,
     },
     {
-        path: '/about',
-        name: 'About Me',
+        path: '/projects',
+        name: 'Projects',
         component: About,
     },
     {

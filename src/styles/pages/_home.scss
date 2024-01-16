@@ -2,19 +2,23 @@
     padding-top: 4rem;
 
     &__intro__section {
-        text-align: center;
-        padding: $base $fluid;
+        // text-align: center;
+        padding: $large $fluid;
         color: #f7efef;
 
         h1 {
-            font-size: clamp(2.5rem, 5vw, calc($big * 2));
+            font-size: clamp(2rem, 4vw, calc($big * 1.5));
             font-family: $alice;
             margin: $md auto;
+
+            span {
+                font-size: clamp($md, 3vw, calc($big * 1.5));
+            }
         }
 
         p {
             max-width: 600px;
-            margin: 0 auto;
+            // margin: 0 auto;
             font-family: $quicksand;
             line-height: 1.8;
             font-size: $base;
@@ -61,20 +65,34 @@
 
     .skills {
         padding: $base $fluid;
-        text-align: center;
         color: #f7efef;
 
         h2 {
             font-family: $alice;
-            font-size: clamp($big, 4vw, calc($base * 3));
+            font-size: clamp($big, 3.5vw, calc($base * 2.5));
             font-weight: map-get($font-weights, "semi-bold");
         }
 
         .languages {
-            @include flex-justify(center);
-            align-items: center;
-            gap: $base;
+            display: flex;
+            flex-direction: column;
+            column-gap: $base;
+            row-gap: $large;
             margin: $big 0 0 0;
+
+            section {
+
+                h3,
+                p {
+                    font-family: $quicksand;
+                }
+
+                p {
+                    margin-top: $base;
+                    line-height: 1.7;
+                }
+            }
+
         }
     }
 
@@ -116,12 +134,16 @@
                 }
             }
 
-            .description {
-                margin-top: $xm;
-                color: #a2a4a5;
-                line-height: 1.6;
-                font-family: $quicksand;
-                font-weight: map-get($font-weights, "medium");
+            ul {
+                li {
+                    margin-top: $xm;
+                    color: #a2a4a5;
+                    line-height: 1.6;
+                    font-family: $quicksand;
+                    font-weight: map-get($font-weights, "medium");
+                    list-style: unset;
+                    margin-left: $base;
+                }
             }
         }
     }

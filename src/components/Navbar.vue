@@ -10,9 +10,10 @@
                 <span></span>
             </div>
             <ul :class="{ open: isActive }">
-                <li><router-link to="/">HOME</router-link></li>
-                <li><router-link to="/contact">CONTACT</router-link></li>
-                <li><a href="#">Résumé</a></li>
+                <!-- <li><router-link to="/">HOME</router-link></li> -->
+                <!-- <li><router-link to="/projects">PROJECTS</router-link></li> -->
+                <li><a href="https://docs.google.com/document/d/1Mz_KxFEWQNWXJnGbJaWQyDMQV0K3ZwUylMJ6Ov1Dyyo/edit"
+                        target="_blank">Résumé</a></li>
             </ul>
         </nav>
     </header>
